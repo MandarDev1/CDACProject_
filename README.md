@@ -55,10 +55,24 @@ This is a Spring Boot-based REST API for a blogging application. It provides end
 
 5. Access APIs at:
 
-Swagger UI : http://localhost:8080/swagger-ui.html
-Example endpoints:
-GET /api/posts
-POST /api/categories
+**API Testing with Postman**
+**Postman used to test and verify all API endpoints.
+
+The Postman collection for this project is included in the repository under docs/PostmanCollection.json.
+You can import this collection into Postman for direct access to all API requests.
+Steps to Use Postman:
+Open Postman and click "Import".
+Select the PostmanCollection.json file included in the /docs folder.
+Update the base URL to http://localhost:8080 in the collection variables.
+Explore and test the available endpoints.
+Postman Screenshots:
+Screenshots showcasing successful API testing are included in the screenshots/ directory:
+
+Category API Testing
+Post API Testing
+JWT Authentication
+Comment API Testing
+
 
 Dependencies Used
 Spring Boot Starter Web
@@ -96,6 +110,14 @@ MySQL Database
 Authentication
 Basic Authentication: Secure endpoints with username and password.
 JWT Authentication: Generate and validate JSON Web Tokens for secure API access.
+
+Pagination and Sorting
+The /api/posts endpoint supports:
+
+Pagination: Use query parameters page and size (e.g., /api/posts?page=0&size=10).
+Sorting: Use the sort parameter (e.g., /api/posts?sort=title,asc).
+
+
 
 
 
