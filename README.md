@@ -1,5 +1,5 @@
 # CDACProject_
-# Blogging APP
+# Blogging App
 
 This is a Spring Boot-based REST API for a blogging application. It provides endpoints to manage posts, categories, comments, user authentication, and more.
 
